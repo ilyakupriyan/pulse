@@ -1,0 +1,70 @@
+.promo
+	min-height: 650px
+	padding: 21px 0 93px 0
+	background: url("../img/background/promo.jpg") center (center / cover) no-repeat
+	&__wrapper
+		margin-top: 91px
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+	&__header
+		font-size: 42px
+		font-weight: 700
+		text-transform: uppercase
+		color: #ffffff
+		line-height: 42px
+	&__subheader
+		margin-top: 17px
+		font-size: 24px
+		line-height: 24px
+		font-weight: 500
+		text-transform: uppercase
+		color: #ffffff
+	&__icons
+		margin-top: 65px
+		width: 425px
+		display: flex
+		justify-content: space-between
+	&__icon
+		width: 108px
+		text-align: center
+		font-size: 14px
+		font-weight: 500
+		color: #ffffff
+		img
+			display: block
+			margin: 0 auto
+			margin-bottom: 20px
+	&__link
+		margin-top: 18px
+		font-size: 16px
+		font-weight: 500
+		color: #ffffff
+		a
+			text-decoration: underline
+			text-transform: uppercase
+			color: #fff
+			&:hover
+				color: $hover_links
+
+@media (max-width: 991px)
+	.promo
+		&__wrapper
+			align-items: center
+
+@media (max-width: 575px)
+	.promo
+		min-height: 0
+		padding-bottom: 60px
+		&__wrapper
+			margin-top: 75px
+		&__header
+			text-align: center
+			font-size: 28px
+			line-height: 28px
+		&__subheader
+			text-align: center
+			font-size: 20px
+			line-height: 20px
+		&__icons
+			display: none
