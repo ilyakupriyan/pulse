@@ -4,8 +4,21 @@
 	font-weight: 700
 	color: $second_color
 	text-transform: uppercase
+	&_left
+		text-align: left
+		font-size: 36px
+		color: #fff
 
+@media (max-width: 991px)
+	.title
+		&_left
+			text-align: center
+			font-size: 32px
 
 @media (max-width: 767px)
 	.title
 		font-size: 23px
+
+@media (max-width: 575px)
+	.title
+		font-size: 18px
